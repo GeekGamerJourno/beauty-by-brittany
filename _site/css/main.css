@@ -9,6 +9,7 @@
 
 ---------------------------
 Website Fonts: List fonts here for reference
+Logo font font-family: 'Parisienne', cursive;
 Website Colours: List colour hex codes here for reference
 #f1a9a0 - feature colour
 ----------------------------
@@ -85,7 +86,7 @@ blockquote {
 }
 
 #intro-banner h1 {
-  font-size: 6.0rem; line-height: 1.2; } /*changes the h1 just in the intro banner*/
+  font-size: 6.0rem; line-height: 1.2; /*changes the h1 just in the intro banner*/
 }
 
 /* Lists */
@@ -151,9 +152,9 @@ nav a:hover {
   transition: all 0.5s;
 }
 .logo {
-  max-height: 2.5rem;
+  /* max-height: 2.5rem; */
   max-width: 15rem;
-  margin: 0.5em 0;
+  /* margin: 0.5em 0; */
 }
 header {
   border-bottom: 1px solid rgb(245,245,245);
