@@ -10,6 +10,7 @@
 ---------------------------
 Website Fonts: List fonts here for reference
 Website Colours: List colour hex codes here for reference
+#f1a9a0 - feature colour
 ----------------------------
 */
 
@@ -104,7 +105,7 @@ section         { padding: 5%; }
 /* Other universal styles */
 
 .bg-featured{
-  background-color: #1abc9c; /* featured color */
+  background-color: #f1a9a0; /* featured color */
   color: white;
 }
 .bg-light {
@@ -117,7 +118,7 @@ section         { padding: 5%; }
 
 /* featured icons */
 [class*=fa].featured {
-  color: #1abc9c; /* featured color */
+  color: #f1a9a0; /* featured color */
   background: none;
 }
 
@@ -141,7 +142,7 @@ nav a {
     color: inherit;
 }
 nav a:hover {
-  color: #1abc9c; /* featured color */
+  color: #f1a9a0; /* featured color */
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -207,7 +208,7 @@ footer nav [class*=fa], /* this special selector is targetting all classes with 
 
 /* ----- MODULAR ELEMENTS --------------------------- */
 .banner {
-  background-color: #1abc9c; /* featured-color */
+  background-color: #f1a9a0; /* featured-color */
   background-size: cover;
   background-position: center;
   min-height:80vh;
@@ -261,8 +262,8 @@ footer nav [class*=fa], /* this special selector is targetting all classes with 
 }
 
 .button {
-  border: 2px solid #1abc9c; /* featured color */
-  color: #1abc9c; /* featured color */
+  border: 2px solid #f1a9a0; /* featured color */
+  color: #f1a9a0; /* featured color */
 }
 
 .button:hover {
@@ -271,8 +272,8 @@ footer nav [class*=fa], /* this special selector is targetting all classes with 
 }
 
 .button-solid {
-  border: 2px solid #1abc9c; /* featured color */
-  background-color: #1abc9c; /* featured color */
+  border: 2px solid #f1a9a0; /* featured color */
+  background-color: #f1a9a0; /* featured color */
   color: white;
 }
 
@@ -365,8 +366,8 @@ footer nav [class*=fa], /* this special selector is targetting all classes with 
 }
 
 a.category:hover {
-  border-color: #1abc9c; /* featured color */
-  color: #1abc9c; /* featured color */
+  border-color: #f1a9a0; /* featured color */
+  color: #f1a9a0; /* featured color */
 }
 
 
@@ -387,7 +388,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border: 2px solid #1abc9c; /* featured color */
+  border: 2px solid #f1a9a0; /* featured color */
 }
 
 textarea {
