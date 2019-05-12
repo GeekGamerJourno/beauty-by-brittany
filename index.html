@@ -5,22 +5,25 @@ meta-description: Business website for Beauty by Brittany.
 featured-image_path: /uploads/pr-photos-6472.jpg
 icon-list:
   - icon-code: far fa-snowflake
-    heading: Heading
+    heading: Make Up
+    description:
+      - Makeup with lashes $80
+      - Makeup without lashes $70
+      - One-on-one lession $90
+  - icon-code: far fa-snowflake
+    heading: Wedding
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   - icon-code: far fa-snowflake
-    heading: Heading
+    heading: Hair
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   - icon-code: far fa-snowflake
-    heading: Heading
+    heading: Bridal Packages
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   - icon-code: far fa-snowflake
-    heading: Heading
+    heading: Event Packages
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   - icon-code: far fa-snowflake
-    heading: Heading
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - icon-code: far fa-snowflake
-    heading: Heading
+    heading: Other Services
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 cards:
   - heading: Makeup
@@ -42,14 +45,56 @@ cards:
   </div>
 </section>
 
+
 <!-- CTA WITH BUTTON SECTION ---->
 <section class="bg-featured center">
   <h3> BOOK AN APPOINTMENT </h3>
-  <p> Send me an email to book an appointment, or sign up to my mailing list to be the first to hear about events. </p>
-  <a class="button-inverted" href="#register"> SIGN UP </a>
+  <p> Send me an email to book an appointment, or sign up to my mailing list. </p>
+  <a class="button-inverted" href="#register"> BOOK </a>
 </section>
 
-<!--  ICON GRID SECTION ---->
+<!-- CARD GRID SERVICES SECTION ----->
+<section class="grid">
+
+  <div class="col-12 center">
+    <h2> Services </h2>
+    <p> I offer a range of professional services and can come to you at an additional cost. Choose from our existing menu, or get in touch for a quote. </p>
+  </div>
+
+  {% for card in page.cards %}
+
+  <!-- start column -->
+  <div class="col-4_sm-12">
+
+    <!-- start card -->
+    <a class="card" href="{{card.link}}">
+      <div class="bg-img" style="background-image:url('{{card.featured_image}}')"></div>
+      <div class="card-text">
+        <h3> {{card.heading}} </h3>
+        <p> {{card.description}}</p>
+      </div>
+    </a> <!-- end card -->
+
+  </div><!-- end column -->
+
+  {% endfor %}
+</section>
+
+<!-- CTA WITH SIGNUP SECTION ---->
+<section class="bg-light center grid">
+  <div class="col-12">
+    <h3> SIGN UP FOR THE LATEST OFFERS </h3>
+    <p> Sign up to my mailing list to be the first to hear about events, exclusive offers, and the latest make up techniques.  </p>
+    <form class="email-signup" action="https://formspree.io/your@email.com"
+        method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="_replyto" placeholder="Your Email">
+        <input type="submit" value="Send" class="button">
+    </form>
+</section>
+
+
+<!--  ICON GRID SECTION -->
 <section class="center">
   <h2> PROFESSIONAL AND EXPERIENCED </h2>
   <div class="icon grid">
@@ -60,33 +105,24 @@ cards:
     <div class="col-4_sm-12">
       <i class="{{item.icon-code}}"></i>
       <h3> {{item.heading}} </h3>
-      <p> {{item.description}} </p>
+      <!-- <p> {{item.description}} </p> -->
+      <ul>
+        <li>{{ item.description }}</li>
+      </ul>
     </div>
     {% endfor %}
 
   </div> <!-- end of grid -->
-</section>
+ </section>
 
-<!-- CTA WITH SIGNUP SECTION ---->
-<section class="bg-light center grid">
-  <div class="col-12">
-    <h3> Another Call to Action </h3>
-    <p> This one could be connected to your email newsletter, like mailchimp or mailerlite or just a standard email form.  </p>
-    <form class="email-signup" action="https://formspree.io/your@email.com"
-        method="POST">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="email" name="_replyto" placeholder="Your Email">
-        <input type="submit" value="Send" class="button">
-    </form>
-</section>
 
-<!-- BIG IMAGE + TEXT GRID SECTION ---->
+<!-- BIG IMAGE + TEXT GRID SECTION -->
 <section class="no-padding">
 <div class="grid bg-dark med-height">
   <div class="col-6_sm-12 bg-img" style=" background-size: cover; background-image: url('/images/brittany_carla-136.jpg')">
   </div>
   <div class="col-6_sm-12-middle">
-    <h2> Heading </h2>
+    <h2> Make Up </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
   </div>
 </div> <!-- end grid -->
@@ -130,31 +166,4 @@ cards:
     <input type="submit" value="Send" class="button-solid">
   </div>
 </form>
-</section>
-
-<!-- CARD GRID SERVICES SECTION ----->
-<section class="grid">
-
-  <div class="col-12 center">
-    <h2> Services </h2>
-    <p> I offer a range of professional services and can come to you at an additional cost. Choose from our existing menu, or get in touch for a quote. </p>
-  </div>
-
-  {% for card in page.cards %}
-
-  <!-- start column -->
-  <div class="col-4_sm-12">
-
-    <!-- start card -->
-    <a class="card" href="{{card.link}}">
-      <div class="bg-img" style="background-image:url('{{card.featured_image}}')"></div>
-      <div class="card-text">
-        <h3> {{card.heading}} </h3>
-        <p> {{card.description}}</p>
-      </div>
-    </a> <!-- end card -->
-
-  </div><!-- end column -->
-
-  {% endfor %}
 </section>
