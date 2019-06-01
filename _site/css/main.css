@@ -216,7 +216,7 @@ footer nav [class*=fa], /* this special selector is targetting all classes with 
   background-color: #f1a9a0; /* featured-color */
   background-size: cover;
   background-position: center;
-  min-height:80vh;
+  min-height:90vh;
   position: relative;
 }
 
