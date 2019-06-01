@@ -423,7 +423,7 @@ form [class*=col-] {
 
 /* home page intro banner */
 #intro-banner {
-  background-image: url('/images/img_2433.JPG'); /* This is just an example */
+  background-image: url("/images/banner.jpg"); /* This is just an example */
 }
 
 /*------- Media Queries ------------------------*/
