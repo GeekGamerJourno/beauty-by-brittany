@@ -3,32 +3,6 @@ layout: default
 title: Beauty by Brittany | Makeup Artist
 meta-description: Business website for Beauty by Brittany.
 featured-image_path: /uploads/pr-photos-6472.jpg
-icon-list:
-  - icon-code: far fa-snowflake
-    heading: Make Up
-    description:
-      - Makeup with lashes $80
-      - Makeup without lashes $70
-      - One-on-one lession $90
-  - icon-code: far fa-snowflake
-    heading: Wedding
-    description:
-      - Bridal trial
-      - Bridal makeup
-      - Bridal makeup package (trial & Wedding day)
-      - VIP bridal tan package (4 or more)
-  - icon-code: far fa-snowflake
-    heading: Hair
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - icon-code: far fa-snowflake
-    heading: Bridal Packages
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - icon-code: far fa-snowflake
-    heading: Event Packages
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  - icon-code: far fa-snowflake
-    heading: Other Services
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 cards:
   - heading: Makeup
     description: I can do your makeup for you or teach you how to do it yourself and provide advice on the right products for you. Bring your own lashes or I can supply them for you.
@@ -42,8 +16,8 @@ cards:
 ---
 
 <!-- FIRST BANNER SECTION ---->
-<section id="intro-banner" class=" overlay banner bg-featured center grid-middle">
-  <div class="col">
+<section id="intro-banner" class=" overlay banner bg-featured center grid-middle mob-hide">
+  <div class="col mob-hide">
     <h1> BEAUTY BY BRITTANY </h1>
     <!-- removed <br class="mob-hide"> from the middle of the h1 -->
   </div>
@@ -89,36 +63,13 @@ cards:
   <div class="col-12">
     <h3> SIGN UP FOR THE LATEST OFFERS </h3>
     <p> Sign up to my mailing list to be the first to hear about events, exclusive offers, and the latest make up techniques.  </p>
-    <form class="email-signup" action="https://formspree.io/your@email.com"
+    <form class="email-signup" action="https://formspree.io/beautybybrittanyx@gmail.com"
         method="POST">
         <input type="text" name="name" placeholder="Your Name">
         <input type="email" name="_replyto" placeholder="Your Email">
         <input type="submit" value="Send" class="button">
     </form>
 </section>
-
-
-<!--  ICON GRID SECTION -->
-<section class="center">
-  <h2> PROFESSIONAL AND EXPERIENCED </h2>
-  <div class="icon grid">
-
-    <!-- you can find the icon codes at font awesome (sort for free ones) -->
-
-    {% for item in page.icon-list %}
-    <div class="col-4_sm-12">
-      <i class="{{item.icon-code}}"></i>
-      <h3> {{item.heading}} </h3>
-      <!-- <p> {{item.description}} </p> -->
-      <ul>
-        <li>{{item.description}}</li>
-      </ul>
-    </div>
-    {% endfor %}
-
-  </div> <!-- end of grid -->
- </section>
-
 
 <!-- BIG IMAGE + TEXT GRID SECTION -->
 <section class="no-padding">
@@ -127,14 +78,14 @@ cards:
   </div>
   <div class="col-6_sm-12-middle">
     <h2> Make Up </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    <p> Using the latest techniques and products, I can create a unique look for your event, from low-key to OTT and even special effects. </p>
   </div>
 </div> <!-- end grid -->
 
 <div class="grid mob-flip med-height">
   <div class="col-6_sm-12-middle">
-    <h2> Heading </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    <h2> Bridal </h2>
+    <p> You can trust me to create the perfect look for your big day. I conveniently come to you to make sure your experience is low-stress but high-quality. </p>
   </div>
   <div class="col-6_sm-12 bg-img" style=" background-size: cover; background-image: url('/images/models15.jpg')">
     <!-- ADD BACKGROUND IMAGE style="background-image:url('_____')" -->
@@ -146,8 +97,8 @@ cards:
     <!-- ADD BACKGROUND IMAGE style="background-image:url('_____')" -->
   </div>
   <div class="col-6_sm-12-middle">
-    <h2> Heading </h2>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum dapibus felis, sed convallis turpis aliquam nec. </p>
+    <h2> Beauty </h2>
+    <p> A great look starts with a great foundation. From waxing, to tinting and extensions, I can make sure you're all set to get the most out of your look. </p>
   </div>
 </div> <!-- end grid -->
 </section>
